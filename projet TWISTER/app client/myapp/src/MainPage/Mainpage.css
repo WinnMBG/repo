@@ -1,0 +1,10 @@
+.h1{
+	font-size: large;
+	font-family: 'Segoe Script', sans-serif;
+	color: mintcream;
+	justify-content: center;
+}
+
+body{
+	background-color: black;
+}

@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "f83bacc5-5f38-4090-baf6-847201ff5e97",
+		"name": "API Messages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\": 1,\r\n    \"username\" :\"pikachu\",\r\n    \"date\": \"Lundi 15/2/2020 à 16h\",\r\n    \"text\":\"Voici le premier message !\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/apim/messages/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apim",
+						"messages",
+						"post"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userid\": 1,\r\n    \"username\" :\"pikachu\",\r\n    \"date\": \"Lundi 15/2/2020 à 16h\",\r\n    \"text\":\"Voici le premier message !\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/apim/messages/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"apim",
+								"messages",
+								"post"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-2R9wlHJrs6+nRzL/offbPD6whpI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 02 May 2022 21:28:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg_st\": \"Message dans la BD !\"\n}"
+				},
+				{
+					"name": "createMessage",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userid\": 2,\r\n    \"username\" :\"mj\",\r\n    \"date\": \"Lundi 15/2/2020 à 17h\",\r\n    \"text\":\"Voici le troisieme message !\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/apim/messages/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"apim",
+								"messages",
+								"post"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-2R9wlHJrs6+nRzL/offbPD6whpI\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3AZOetbCGqVjSdiXsFDKWWboAr_gBTFKnE.lTaCY%2B5bHNLqDV%2BYzq95Zi9eT5MrzedQA%2BPsTF9pZVA; Path=/; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 May 2022 14:00:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg_st\": \"Message dans la BD !\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getMessagesFromUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"mj\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/apim/messages/get/mj",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apim",
+						"messages",
+						"get",
+						"mj"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getMessages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"mj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/apim/messages/get/mj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"apim",
+								"messages",
+								"get",
+								"mj"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "259"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"103-//VIYUN1wJ02BVnn+M9ubO7GB4U\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 May 2022 14:01:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"messages\": [\n        {\n            \"userid\": 2,\n            \"username\": \"mj\",\n            \"date\": \"Lundi 15/2/2020 à 16h\",\n            \"text\": \"Voici le second message !\",\n            \"_id\": \"gIU3exSoOFpBP1zA\"\n        },\n        {\n            \"userid\": 2,\n            \"username\": \"mj\",\n            \"date\": \"Lundi 15/2/2020 à 17h\",\n            \"text\": \"Voici le troisieme message !\",\n            \"_id\": \"mC477sFx78FNdeV2\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteMessage",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"1\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/apim/messages/del",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apim",
+						"messages",
+						"del"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteMessage",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/apim/messages/del/mj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"apim",
+								"messages",
+								"del",
+								"mj"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-WLz98cc83tDJ/i1NleLrTIWomT8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 May 2022 14:45:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"reponse\": \"Messages supprimés\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getAllMessages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/apim/messages/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"apim",
+						"messages",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllMessages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/apim/messages/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"apim",
+								"messages",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "520"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"208-2XWwxr3+AjpvRRq3me6lRyfMBGc\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3AcVXHHPVZmiIVe0jB9WVO6sZd4h-0e2JT.lrv3a7zBdGBvMQVYAePNIJSbwtOE2X0nZpKEj1ZpZbo; Path=/; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 07 May 2022 14:23:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Allmessages\": [\n        {\n            \"userid\": 1,\n            \"username\": \"pikachu\",\n            \"date\": \"Mardi 16/02/2020 à 17h\",\n            \"text\": \"Voici le quatrième message !\",\n            \"_id\": \"M5dMlD8AE50qrsiR\"\n        },\n        {\n            \"userid\": \"pikachu\",\n            \"username\": 1,\n            \"date\": \"Lundi 15/2/2020 à 16h\",\n            \"text\": \"Voici le premier message !\",\n            \"_id\": \"a7qfobHckhdE5tDu\"\n        },\n        {\n            \"userid\": 2,\n            \"username\": \"mj\",\n            \"date\": \"Lundi 15/2/2020 à 16h\",\n            \"text\": \"Voici le second message !\",\n            \"_id\": \"gIU3exSoOFpBP1zA\"\n        },\n        {\n            \"userid\": 2,\n            \"username\": \"mj\",\n            \"date\": \"Lundi 15/2/2020 à 17h\",\n            \"text\": \"Voici le troisieme message !\",\n            \"_id\": \"mC477sFx78FNdeV2\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

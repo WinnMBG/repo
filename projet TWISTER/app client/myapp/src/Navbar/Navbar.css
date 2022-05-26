@@ -1,0 +1,38 @@
+nav{
+    height: 50px;
+    background: rgba(255, 255, 255, 0.644);
+}
+
+.liste{
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    margin-right: 80em;
+    margin-top: 3px;
+}
+
+span{
+    color: red;
+    font-family: 'Segoe Script', sans-serif;      ;
+    font-size: larger;
+    position: absolute;
+    right: 57em;
+    top:15px;
+}
+
+.items{
+    margin-right:10px;
+}
+
+.boutonco{
+    position: relative;
+    border-radius: 30px;
+    border: 0px 0px 5px black;
+}

@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "963726f8-2b74-4922-a4d7-901b57a1fac3",
+		"name": "API Friends",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getFriendsList",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getFriendsInfo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

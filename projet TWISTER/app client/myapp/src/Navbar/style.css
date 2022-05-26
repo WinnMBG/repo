@@ -1,0 +1,60 @@
+body
+{
+	background-image: url('https://boutique-manga.fr/wp-content/uploads/2021/05/Big-Three-Shonen-HxH.jpg');
+	background-repeat: no-repeat;
+	background-color: rgb(0, 0, 0);
+	background-size: 90em;
+}
+/**/
+
+label
+{
+	color: rgb(255, 255, 255);
+}
+
+.titre
+{
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-family: 'Segoe Script', sans-serif;
+}
+
+.field
+{
+	position: absolute;
+	left:150px;
+	top: 30px;
+}
+
+.field2
+{
+	position: absolute;
+	left: 150px;
+	margin-top: 10px
+}
+
+.field > input
+{
+	margin-left: 23px ;
+}
+	
+form
+{	
+
+	position: relative;	
+	border: solid;
+	width: 500px;
+	height: 100px;
+	margin: 0px auto;
+	padding-top: 50px;
+	box-shadow: 0px 0px 5px rgb(247, 245, 245);
+	border-radius: 10px;
+}
+	
+
+.bouton
+{	
+	position: absolute;
+	margin-top: 50px;
+	left: 150px;
+}

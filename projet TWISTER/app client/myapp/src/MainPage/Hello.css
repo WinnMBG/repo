@@ -1,0 +1,22 @@
+.Bienvenue{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.Titredebut{
+    color: rgb(255, 0, 0);
+    font-size: large;
+    font-family: 'Segoe Script', 'sans serif';
+}
+.paraph, .paraph2{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+h2{
+    color: white;
+    font-size: larger;
+    font-family: 'Segoe Script', 'sans serif';
+    font-weight: bold;
+}
