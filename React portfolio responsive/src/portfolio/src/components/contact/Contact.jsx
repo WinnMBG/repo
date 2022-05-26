@@ -23,7 +23,7 @@ const Contact = () => {
             <BsLinkedin className='contact__option-icon'/>
             <h4>LinkedIn</h4>
             <h5>Winn-Elie MBOURANGA</h5> 
-            <a href="https://https://www.linkedin.com/in/winn-elie-mbouranga-09a569222/" target='_blank'>Send Message</a>
+            <a href="https://www.linkedin.com/in/winn-elie-mbouranga/" target='_blank'>Send Message</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className='contact__option-icon'/>
