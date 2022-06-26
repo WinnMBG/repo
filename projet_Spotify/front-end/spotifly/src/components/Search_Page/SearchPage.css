@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Smooch';
+  src: url(../Fonts/Smooch-Regular.ttf) format('truetype');
+}
+
+.App {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.app_container{
+  color: #57b760;
+  font-family: 'Smooch';
+  font-size: xx-large;
+  height: 50px;
+  cursor: pointer;
+}
+
+.app_container:hover{
+  font-family: 'Smooch';
+  font-size: xx-large;
+  color: aqua;
+  cursor: pointer;
+  transition: all 1s ease;
+}

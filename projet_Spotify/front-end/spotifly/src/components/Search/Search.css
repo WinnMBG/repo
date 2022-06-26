@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Helvetica_Bold';
+    src: url(../Fonts/Helvetica_Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+.search_container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.search_results{
+    color: whitesmoke;
+    font-family: 'Helvetica_Bold';
+    text-align: center;
+    margin-top: 3em;
+}
+
+.search_title{
+    font-size: medium;
+}
+
+input{
+    border: 1px solid rgb(107, 101, 101);
+    width: 500px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+button{
+    padding: 15px 35px;
+    background-color: #57b760;
+    font-family: 'Helvetica_Bold';
+    color: whitesmoke;
+    border: transparent;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 700ms ease;
+}
+
+button:hover{
+    background-color: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 1px solid #57b760;
+    border-radius: 30px;
+}
+
+.icon{
+    position: absolute;
+    margin-left: 9em;
+}
+
+
+/* ================ RESPONSIVE ================ */
+
+@media screen and (max-width: 600px) {
+    input{
+        width: 250px;
+        height: 20px;
+        border-radius: 30px;
+    }
+
+    button{
+        margin-left: 5px;
+        padding: 5px 15px;
+    }
+
+    .icon{
+        position: absolute;
+        margin-left: 3.5em;
+    }
+}

@@ -1,0 +1,197 @@
+
+/* ============== Import du fichier TTF =================== */
+@font-face {
+    font-family: 'Helvetica_Bold';
+    src: url(../Fonts/Helvetica_Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ===================== Conteneur d'éléments =============== */
+.container{
+    display: block;
+    text-align: center;
+}
+
+/*==================== IMAGE DE LA PLAYLIST ET NOM DE L'ARTISTE ===================== */
+.pic{
+    justify-content: center;
+}
+
+.pic > img{
+    width: 20em;
+    height: 20em;
+    text-align: center;
+}
+
+.artist_name{
+    color: #A9A9A9;
+    font-family: 'Helvetica_Bold';
+    font-size: large;
+}
+
+/* ===================== BOUTONS ================== */
+.btn1{
+    color: white;
+    background: transparent;
+    padding: 15px 30px;
+    width: 250px;
+    border: 1px solid #57b760;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Helvetica_Bold';
+    justify-content: center;
+}
+
+.btn2{
+    background:#57b760;
+    color: white;
+    font-size: larger;
+    padding: 25px 40px;
+    width: 400px;
+    cursor: pointer;
+    transition: all 400ms ease;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-family: 'Helvetica_Bold';
+}
+
+.btn2:hover{
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #57b760;
+}
+
+.title{
+    font-family: 'Helvetica_Bold';
+    color: white;
+    text-align: center;
+}
+
+/* =========================== SECTION DE LA PLAYLIST ==================== */
+
+.playhead{
+    display: flex;
+    align-items: center;
+}
+
+.playhead > h1{
+    color: white;
+    font-family: 'Helvetica_Bold';
+    text-align: left;
+    margin-left: 13.2em;
+    margin-bottom: 0px;
+}
+
+.playhead > img{
+    position: absolute;
+    flex-direction: row-reverse;
+    margin-left: 55em;
+}
+
+.playlist_items{
+    display: inline;
+    text-align: left;
+    align-items: flex-end;
+}
+
+.playlist_items > h2{
+    grid-column: 1;
+    margin-left: 5.4em;
+    justify-content: left;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.playlist_items > h3{
+    grid-column: 1;
+    margin-left: 7em;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.playlist_items > img{
+    height: 2em;
+    cursor: pointer;
+
+}
+
+/* =================== PARTIE RESPONSIVE =================== */
+
+/* ================== (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px) {
+
+    .playhead > h1{
+        margin-left: 0px;
+    }
+
+    .playhead > img{
+        position: absolute;
+        flex-direction: row-reverse;
+        margin-left: 0px ;
+    }
+
+    .playhead{
+        margin-top: 3em;
+        margin-left: 3em;
+    }
+
+    .btn2{
+        background:#57b760;
+        color: white;
+        font-size: larger;
+        padding: 25px 40px;
+        width: 300px;
+        cursor: pointer;
+        transition: all 400ms ease;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        font-family: 'Helvetica_Bold';
+    }
+    
+    .btn2:hover{
+        background: transparent;
+        cursor: pointer;
+        border: 1px solid #57b760;
+    }
+
+    .playlist_items > h2{
+        grid-column: 1;
+        margin-left: 2em;
+        justify-content: left;
+        color: white;
+        margin-bottom: 5px;
+    }
+    
+    .playlist_items > h3{
+        grid-column: 1;
+        margin-left: 2.6em;
+        color: grey;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        position: relative;
+    }
+}
+
+/* ==================== BIG DEVICES ========================== */
+@media  screen and (max-width: 1200px) {
+
+    .playhead > h1{
+        margin-left: 0px;
+    }
+
+    .playhead > img{
+        position: absolute;
+        flex-direction: row-reverse;
+        margin-left: 22em ;
+    }
+
+    .playhead{
+        margin-top: 3em;
+        margin-left: 8em;
+    }
+    
+}
