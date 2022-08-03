@@ -1,21 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import UserList from './pages/UserList';
+
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-      <footer>
-        <ul>
-          <li>BONZAIIII!</li>
-          <li>NARUTOOOO</li>
-          <li>BONZAIIII!</li>
-          <li>BONZAIIII!</li>
-          <li>BONZAIIII!</li>
-          <li>BONZAIIII!</li>
-          <li>BONZAIIII!</li>
-        </ul>
-      </footer>
-    </div>
+   <BrowserRouter>
+    <Routes>
+      <Route path="/coup-de-coeur" element={<UserList/>}/>
+      <Route path="*" element={<Home/>}/>
+    </Routes>
+   </BrowserRouter>
   );
 }
 
