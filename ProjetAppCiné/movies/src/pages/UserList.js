@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Card from "../components/Card";
 import Header from "../components/Header";
 
 const UserList = () => {
@@ -15,11 +16,13 @@ const UserList = () => {
     },[])
 
     return(
-        <div>
+        <div className="user-list-page">
            <Header/>
            <h2>Favoris<span>❤️</span></h2>
            <div className="result">
-
+            {listData.length > 0 ? (listData.map((movie) => {
+                return (<Card mov={movie} key={movie.id}/>)
+            })) : <h1>No favorites for the moment...</h1>}
            </div>
         </div>
     );

@@ -80,6 +80,12 @@ const Card = ({ mov }) => {
        }
     };
 
+    const deleteStorage = () => {
+        let stored = window.localStorage.movies.split(",");
+        let newData = stored.filter((id) => id != mov.id)
+        window.localStorage.movies = newData;
+    };
+
     return(
         <div className="card">
             <img src={mov.poster_path ? "https://image.tmdb.org/t/p/w500" + mov.poster_path : "./img/poster.jpg"} alt="affiche film"/>
@@ -89,15 +95,17 @@ const Card = ({ mov }) => {
             ) : "No Date Bro!"}
             <h4>{mov.vote_average}/10 <span>⭐</span></h4>
             <ul>
-                {mov.genre_ids ? genreFinder() : mov.genre.map((genre) => {
+                {mov.genre_ids ? genreFinder() : mov.genres.map((genre) => {
                     return <li>{genre.name}</li>
                 })}
             </ul>
             {mov.overview ? <h3>Synopsis</h3> : ""}
             <p>{mov.overview}</p>
-            <div className="btn" onClick={() => addStorage()}>
+            {mov.genre_ids ? 
+            (<div className="btn" onClick={() => addStorage()}>
                 Ajouter aux favoris
-            </div>
+            </div>) : 
+            <div className="btn" onClick={() => {deleteStorage(); window.location.reload();}}>Supprimer de la liste</div>}
         </div>
     );
 }
