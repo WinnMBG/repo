@@ -36,10 +36,10 @@ const Form = () => {
                 .slice(0,12)
                 .sort((a, b) => {
                     if(sortGB === "goodToBad"){
-                        return (b.vote_average - a.vote.average);
+                        return (b.vote_average - a.vote_average);
                     }
                     else if(sortGB === "badToGood"){
-                            return (a.vote_average - b.vote.average);
+                            return (a.vote_average - b.vote_average);
                         }
                         return "";
                 })
