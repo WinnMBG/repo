@@ -89,6 +89,7 @@ function Playlist_details(props) {
                 }
         </section>
     </div>
+    
   )
 }
 
