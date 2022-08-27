@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h2, h3, h4, .nav-item, #transition, footer{
+    text-align: center;
+}
+
+body{
+    background: lightgray;
+}
+
+header{
+    background: url(./imgs/wallpaper.jpg)no-repeat 50% 50%;
+    height: 100vh;
+    background-size: cover;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.collapse{
+    margin-left: 4%;
+}
+
+h1{
+    font-size: 5em;
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px black;    
+    animation: titre ease 4s;
+}
+
+.navbar{
+    margin-top: 10px!important;
+    background-color: lightblue;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nav-item{
+    color: darkslategray;
+    font-weight: bold;
+    padding-right: 45px;
+}
+
+.nav-item img{
+    width: 80px;
+    height: 80px;
+}
+
+@keyframes titre {
+    0%{
+        opacity: 0;
+        transform: translate(0px, 350px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    
+}
+
+/* -----------------------  CLASSEMENT ------------------------ */
+
+.container{
+    background-color: lightblue;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.elements{
+    padding: 70px 0;
+}
+
+.elements img{
+    border-radius: 30%;
+    width: 200px;
+    height: 200px;
+}
+
+.elements p{
+    font-size: 1.2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+footer{
+    background-color: lightskyblue;
+    padding: 15px 0 4px 0;
+    margin-top: 20px;
+}
+
+footer img{
+    height: 80px;
+    width: 80px;
+}
+
+/* ------------------------ RESPONSIVITY ----------------------- */
+
+@media screen and (max-width: 768px) {
+
+    .elements{
+        padding: 30px 0;
+    }
+
+    .elements p{
+        padding-left: 10px;
+    }
+
+    .elements img{
+        width: 160px;
+        height: 160px;
+    }
+    
+    .nav-item{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .nav-item{
+        padding-right: 5px;
+    }
+
+    .collapse{
+        margin-left: 0%;
+    }
+
+    h1{
+        padding: 200px 0 0 5%;
+    }
+
+    .elements{
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .elements img{
+        margin-bottom: 20px;
+    }
+
+    .navbar{
+        display: none!important;
+    }
+
+}
