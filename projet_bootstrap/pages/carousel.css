@@ -1,0 +1,10 @@
+.carousel-item img{
+    width: 400px;
+    height: 400px;
+}
+
+#carouselExampleIndicators{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
