@@ -59,9 +59,9 @@ Pour la plupart des projets, assurez-vous d'avoir les prérequis suivants :
 Clonez le dépôt et suivez les instructions spécifiques à chaque projet pour lancer l'application ou l'algorithme.
 
 ```bash
-git clone https://github.com/votre-utilisateur/votre-depot.git
-cd votre-projet
-
+git clone https://github.com/WinnMBG/repo.git
+cd repo/nom-projet
+```
 ### Contact
 
 Pour toute question ou demande, n'hésitez pas à me contacter via la section Contact de mon portfolio (bientôt disponible) ou via mon [LinkedIn](https://www.linkedin.com/in/winn-elie-mbouranga/).
