@@ -15,8 +15,8 @@ Vous trouverez dans ce dépôt le code source ainsi qu'une documentation détail
 ---
 
 ## 2. **Portfolio Personnel (en cours de développement)**  
-**Technologies :** HTML, CSS, JavaScript  
-**Statut :** En cours  
+**Technologies :** ReactJS, TailwindCSS, Vite
+**Statut :** En cours (80 % environ...) 
 
 **Description :**  
 Ce projet est un **portfolio personnel** que je développe afin de présenter mes compétences, mes projets et mon parcours de manière interactive et professionnelle. L'objectif est de créer un site web responsive, élégant et facile à naviguer, avec une section pour chaque projet, un CV téléchargeable, et une section contact.  
