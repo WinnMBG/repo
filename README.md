@@ -5,12 +5,11 @@ Bienvenue sur mon GitHub ! Ce dépôt regroupe plusieurs projets que j'ai réali
 ---
 
 ## 1. **TWISTER**  
-**Technologies :** Python, Algorithmes de tri, Structures de données  
+**Technologies :** ReactJs, Mongodb, Javascript 
 **Statut :** Terminé  
 
 **Description :**  
-Ce projet a été réalisé dans le cadre de ma dernière année de licence en informatique. Le but de ce projet était de développer un algorithme d'optimisation nommé **TWISTER**, conçu pour trier et organiser efficacement de grandes quantités de données. Ce projet a permis de mettre en pratique des notions clés comme les algorithmes de tri avancés, les structures de données et l'optimisation des performances.  
-Vous trouverez dans ce dépôt le code source ainsi qu'une documentation détaillant le fonctionnement de l'algorithme, les choix de conception et des exemples d'exécution.
+Ce projet à été réalisé dans le cadre de mon apprentissage personnel sur le langage REACTJS. Il a pour but de créer un réseaux social (type X, anciennement Twitter) avec toutes les fonctionnalités que celui ci peut permettre. On retrouve donc l'envoi de messages, l'nevoi de tweets, les posts, less liste d'amis etc...
 
 ---
 
