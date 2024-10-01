@@ -48,6 +48,15 @@ Ce projet a permis de mettre en pratique des concepts de **machine learning**, d
 
 ---
 
+## 5. **FoodWars - Site e-commerce alimentaire**  
+**Technologies :** NodeJS, Angular  
+**Statut :** En cours de développement  
+
+**Description :**  
+Le projet **FoodWars** est une application e-commerce toute simple visant à explorer le framework Angular sous toutes ses facettes et ayant pour objectif de délivrer un site proposant des plats et permettant la réservation de ceux-ci.
+
+---
+
 ### Installation et Exécution
 
 Chaque projet contient un fichier `README.md` propre avec les instructions d'installation spécifiques.  
