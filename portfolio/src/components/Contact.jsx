@@ -73,8 +73,9 @@ const Contact = () => {
             <button
               className="btn self-start
             bg-white text-dark_primary"
+            disabled={true}
             >
-              Submit
+              Submit (Formulaire en maintenance)
             </button>
           </form>
           <div className="flex-1 flex flex-col gap-5">

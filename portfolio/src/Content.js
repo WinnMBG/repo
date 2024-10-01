@@ -16,8 +16,6 @@ import services_logo2 from "./assets/images/Services/logo2.png";
 
 import project1 from "./assets/images/Projects/img1.png";
 import project2 from "./assets/images/Projects/img2.png";
-import project3 from "./assets/images/Projects/img3.png";
-import person_project from "./assets/images/Projects/person.png";
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
@@ -130,19 +128,14 @@ export const content = {
   Projects: {
     title: "Projets",
     subtitle: "Mes créations",
-    image: person_project,
     project_content: [
       {
-        title: "Gym Website",
+        title: "ElevatePro",
         image: project1,
       },
       {
-        title: "Social Media web",
+        title: "CinéDuRat",
         image: project2,
-      },
-      {
-        title: "Creative Website",
-        image: project3,
       },
     ],
   },
