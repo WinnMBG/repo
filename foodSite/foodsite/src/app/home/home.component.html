@@ -1,3 +1,4 @@
+<app-search></app-search>
 <ul>
   <li *ngFor="let food of foods">
     <a>
@@ -9,16 +10,7 @@
         <span class="favorite {{food.favorite ? '': 'not'}}">
           ❤️
         </span>
-        <star-rating
-          [value]="food.stars"
-          totalstars="5"
-          checkedcolor="red"
-          uncheckedcolor="black"
-          size="24px"
-          readonly="true"
-        >
-        </star-rating>
-        <div class="product-item-folder">
+        <div class="product-item-footer">
           <div class="origins">
             <span *ngFor="let origin of food.origins">
               {{origin}}
@@ -31,7 +23,7 @@
 
         </div>
         <div class="price">
-          <span>{{food.price|currency}}</span>
+          <span>{{food.price}} $</span>
         </div>
       </div>
     </a>
